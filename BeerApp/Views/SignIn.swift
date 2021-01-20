@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Firebase
 
 
 
@@ -14,8 +15,9 @@ struct SignIn : View{
     @State var username = ""
     @State var password = ""
     var body: some View{
+        NavigationView{
         VStack{
-            Text("Sign in").bold()
+            Text("The Ultimate Beer App").bold().italic().underline()
             Spacer()
             Image("beer").resizable().scaledToFit()
             HStack{
@@ -25,14 +27,13 @@ struct SignIn : View{
                     TextField("Enter Password", text: $password).padding().multilineTextAlignment(.center)
                     Spacer()
                     HStack{
+                        
                         VStack{
-                            Button("Sign In"){
-                                if username == "Carlos" && password == "h"{
-                                    print("Signed in! : navigating to home")
-                                }
-                            
-//                                NavigationLink("Go Home",destination:HomeView())
+                            NavigationLink(destination: HomeView()) {
+                                        Text("Sign In")
+                                    }
                             }.padding()
+                        
                             Button("Create Account"){
                                 print("navigating to create account")
                                 //                                NavigationLink("Go Home",destination:CreateAccount())

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		220683D8337DB357D38ACA2A /* Pods_BeerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45A01419C1C0956BE16C427 /* Pods_BeerApp.framework */; };
+		3A80265625B8B1EA0070ECBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80265525B8B1EA0070ECBF /* AppDelegate.swift */; };
 		3A81234925B898EC00B4ED33 /* BeerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81234825B898EC00B4ED33 /* BeerAppApp.swift */; };
 		3A81234B25B898EC00B4ED33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81234A25B898EC00B4ED33 /* ContentView.swift */; };
 		3A81234D25B898EE00B4ED33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A81234C25B898EE00B4ED33 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A80265525B8B1EA0070ECBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A81234525B898EC00B4ED33 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A81234825B898EC00B4ED33 /* BeerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAppApp.swift; sourceTree = "<group>"; };
 		3A81234A25B898EC00B4ED33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				3A81234C25B898EE00B4ED33 /* Assets.xcassets */,
 				3A81236025B89AD400B4ED33 /* GoogleService-Info-2.plist */,
+				3A80265525B8B1EA0070ECBF /* AppDelegate.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -126,7 +129,6 @@
 				817419A714DA18B98C0C0773 /* Pods-BeerApp.debug.xcconfig */,
 				716D806F949047545BFE0112 /* Pods-BeerApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A80265625B8B1EA0070ECBF /* AppDelegate.swift in Sources */,
 				3A81235225B898EE00B4ED33 /* Persistence.swift in Sources */,
 				3A81234B25B898EC00B4ED33 /* ContentView.swift in Sources */,
 				3A81235E25B8991800B4ED33 /* SignIn.swift in Sources */,
