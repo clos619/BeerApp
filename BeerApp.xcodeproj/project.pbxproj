@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		220683D8337DB357D38ACA2A /* Pods_BeerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45A01419C1C0956BE16C427 /* Pods_BeerApp.framework */; };
+<<<<<<< HEAD
 		3A80265625B8B1EA0070ECBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80265525B8B1EA0070ECBF /* AppDelegate.swift */; };
+=======
+		3A07205825B8A20C00FDE7E4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07205725B8A20C00FDE7E4 /* HomeView.swift */; };
+>>>>>>> 5fe7868017adf0e8ddd9c3665784c62e06ed6447
 		3A81234925B898EC00B4ED33 /* BeerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81234825B898EC00B4ED33 /* BeerAppApp.swift */; };
 		3A81234B25B898EC00B4ED33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81234A25B898EC00B4ED33 /* ContentView.swift */; };
 		3A81234D25B898EE00B4ED33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A81234C25B898EE00B4ED33 /* Assets.xcassets */; };
@@ -20,7 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		3A80265525B8B1EA0070ECBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+=======
+		3A07205725B8A20C00FDE7E4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+>>>>>>> 5fe7868017adf0e8ddd9c3665784c62e06ed6447
 		3A81234525B898EC00B4ED33 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A81234825B898EC00B4ED33 /* BeerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAppApp.swift; sourceTree = "<group>"; };
 		3A81234A25B898EC00B4ED33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				3A81235D25B8991800B4ED33 /* SignIn.swift */,
+				3A07205725B8A20C00FDE7E4 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 				3A81235225B898EE00B4ED33 /* Persistence.swift in Sources */,
 				3A81234B25B898EC00B4ED33 /* ContentView.swift in Sources */,
 				3A81235E25B8991800B4ED33 /* SignIn.swift in Sources */,
+				3A07205825B8A20C00FDE7E4 /* HomeView.swift in Sources */,
 				3A81234925B898EC00B4ED33 /* BeerAppApp.swift in Sources */,
 				3A81235525B898EE00B4ED33 /* BeerApp.xcdatamodeld in Sources */,
 			);
