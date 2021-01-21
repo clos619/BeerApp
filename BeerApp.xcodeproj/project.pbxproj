@@ -17,6 +17,7 @@
 		3A81235225B898EE00B4ED33 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81235125B898EE00B4ED33 /* Persistence.swift */; };
 		3A81235525B898EE00B4ED33 /* BeerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A81235325B898EE00B4ED33 /* BeerApp.xcdatamodeld */; };
 		3A81235E25B8991800B4ED33 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81235D25B8991800B4ED33 /* SignIn.swift */; };
+		3A981FF525B9F0A20072B7E8 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A981FF425B9F0A20072B7E8 /* Register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3A81235425B898EE00B4ED33 /* BeerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeerApp.xcdatamodel; sourceTree = "<group>"; };
 		3A81235625B898EE00B4ED33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A81235D25B8991800B4ED33 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		3A981FF425B9F0A20072B7E8 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		716D806F949047545BFE0112 /* Pods-BeerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.release.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.release.xcconfig"; sourceTree = "<group>"; };
 		817419A714DA18B98C0C0773 /* Pods-BeerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.debug.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A45A01419C1C0956BE16C427 /* Pods_BeerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 			children = (
 				3A81235D25B8991800B4ED33 /* SignIn.swift */,
 				3A07205725B8A20C00FDE7E4 /* HomeView.swift */,
+				3A981FF425B9F0A20072B7E8 /* Register.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				3A81234B25B898EC00B4ED33 /* ContentView.swift in Sources */,
 				3A81235E25B8991800B4ED33 /* SignIn.swift in Sources */,
 				3A07205825B8A20C00FDE7E4 /* HomeView.swift in Sources */,
+				3A981FF525B9F0A20072B7E8 /* Register.swift in Sources */,
 				3A81234925B898EC00B4ED33 /* BeerAppApp.swift in Sources */,
 				3A81235525B898EE00B4ED33 /* BeerApp.xcdatamodeld in Sources */,
 			);

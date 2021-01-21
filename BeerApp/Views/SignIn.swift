@@ -29,7 +29,9 @@ struct SignIn : View{
                         
                         VStack{
                             NavigationLink(destination: HomeView()) {
-                                        Text("Sign In")
+                                Text("Sign In").onAppear(){
+                                    verify()
+                                }
                             }
                             }.padding()
                         
