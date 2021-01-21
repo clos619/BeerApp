@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+import Firebase
 
 
 struct SignIn : View{
@@ -30,7 +30,7 @@ struct SignIn : View{
                         VStack{
                             NavigationLink(destination: HomeView()) {
                                         Text("Sign In")
-                                    }
+                            }
                             }.padding()
                         
                             Button("Create Account"){
@@ -44,6 +44,19 @@ struct SignIn : View{
             }
         }
         
+        
     }
+    func verify(){
+            if self.username != "" && self.password != ""{
+                Auth.auth().signIn(withEmail: self.username, password: self.password){
+                    (result,error) in if let error = error{
+                        print(error.localizedDescription)
+                        
+                    }
+                }
+                
+            }
+        }
+    
     
 }

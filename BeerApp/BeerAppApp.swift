@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct BeerAppApp: App {
     let persistenceController = PersistenceController.shared
+    init(){
+        FirebaseApp.configure()
+    }
 
     var body: some Scene {
         WindowGroup {

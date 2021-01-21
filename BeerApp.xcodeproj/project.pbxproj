@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		220683D8337DB357D38ACA2A /* Pods_BeerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45A01419C1C0956BE16C427 /* Pods_BeerApp.framework */; };
 		3A07205825B8A20C00FDE7E4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07205725B8A20C00FDE7E4 /* HomeView.swift */; };
+		3A6B02CD25B9169C00DA73D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B02CC25B9169C00DA73D7 /* GoogleService-Info.plist */; };
 		3A81234925B898EC00B4ED33 /* BeerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81234825B898EC00B4ED33 /* BeerAppApp.swift */; };
 		3A81234B25B898EC00B4ED33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81234A25B898EC00B4ED33 /* ContentView.swift */; };
 		3A81234D25B898EE00B4ED33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A81234C25B898EE00B4ED33 /* Assets.xcassets */; };
@@ -16,11 +17,11 @@
 		3A81235225B898EE00B4ED33 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81235125B898EE00B4ED33 /* Persistence.swift */; };
 		3A81235525B898EE00B4ED33 /* BeerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A81235325B898EE00B4ED33 /* BeerApp.xcdatamodeld */; };
 		3A81235E25B8991800B4ED33 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81235D25B8991800B4ED33 /* SignIn.swift */; };
-		3A81236125B89AD400B4ED33 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A81236025B89AD400B4ED33 /* GoogleService-Info-2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A07205725B8A20C00FDE7E4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3A6B02CC25B9169C00DA73D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A81234525B898EC00B4ED33 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A81234825B898EC00B4ED33 /* BeerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAppApp.swift; sourceTree = "<group>"; };
 		3A81234A25B898EC00B4ED33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		3A81235425B898EE00B4ED33 /* BeerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeerApp.xcdatamodel; sourceTree = "<group>"; };
 		3A81235625B898EE00B4ED33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A81235D25B8991800B4ED33 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
-		3A81236025B89AD400B4ED33 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		716D806F949047545BFE0112 /* Pods-BeerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.release.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.release.xcconfig"; sourceTree = "<group>"; };
 		817419A714DA18B98C0C0773 /* Pods-BeerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.debug.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A45A01419C1C0956BE16C427 /* Pods_BeerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +69,6 @@
 		3A81234725B898EC00B4ED33 /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
-				3A81236625B89B2900B4ED33 /* Models */,
 				3A81234825B898EC00B4ED33 /* BeerAppApp.swift */,
 				3A81234A25B898EC00B4ED33 /* ContentView.swift */,
 				3A81236325B89B0D00B4ED33 /* Resources */,
@@ -93,8 +92,8 @@
 		3A81236325B89B0D00B4ED33 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3A6B02CC25B9169C00DA73D7 /* GoogleService-Info.plist */,
 				3A81234C25B898EE00B4ED33 /* Assets.xcassets */,
-				3A81236025B89AD400B4ED33 /* GoogleService-Info-2.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -106,13 +105,6 @@
 				3A07205725B8A20C00FDE7E4 /* HomeView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		3A81236625B89B2900B4ED33 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		985EC872922F24FBABE34157 /* Frameworks */ = {
@@ -193,7 +185,7 @@
 			files = (
 				3A81235025B898EE00B4ED33 /* Preview Assets.xcassets in Resources */,
 				3A81234D25B898EE00B4ED33 /* Assets.xcassets in Resources */,
-				3A81236125B89AD400B4ED33 /* GoogleService-Info-2.plist in Resources */,
+				3A6B02CD25B9169C00DA73D7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
