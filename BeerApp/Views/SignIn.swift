@@ -97,10 +97,29 @@ struct SignIn : View{
                     HStack{
                         
                         VStack{
-                            Button(action: signIn){
-                                Text("Sign In")
+                            
+                            NavigationLink(destination: HomeView(), isActive: $isActive) {
+                                Button(action: {
+                                    signIn()
+                                    self.isActive = true
+                                }) {
+                                    Text("Login")
+                                }
                             }
-                            NavigationLink(destination: HomeView(), isActive: $isActive) { }
+                            
+                            
+//                            Button(action: signIn){
+//                                Text("Sign In")
+//                                isActive = true
+//                            }
+//                            Button("Sign In"){
+//                                signIn()
+//                            }.onTapGesture {
+//                                isActive = true
+//                            }
+//                            NavigationLink(destination: HomeView(), isActive: $isActive){
+//
+//                            }
                             
                             if error != ""{
                                 Text(error)
@@ -123,17 +142,6 @@ struct SignIn : View{
                 }
             }
         }
-    func verify(){
-            if self.email != "" && self.password != ""{
-                Auth.auth().signIn(withEmail: self.email, password: self.password){
-                    (result,error) in if let error = error{
-                        print(error.localizedDescription)
-                        
-                    }
-                }
-                
-            }
-        }
     }
 
 struct AuthView: View{
@@ -149,3 +157,4 @@ struct AuthView_Preview: PreviewProvider{
         AuthView().environmentObject(SessionStore())
     }
 }
+
