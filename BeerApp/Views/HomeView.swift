@@ -15,12 +15,16 @@ struct HomeView: View {
     }
     private let database = Database.database().reference()
     var body: some View {
+        
+        HStack{
+            SearchBar(userEnteredZipCode: userEnteredZipCode)
+        }
         NavigationView{
         Text("Welcome Home")
-        Label{
-            Text("User: \(00)")
-        }icon:{
-        }
+//        Label{
+//            //Text("User: \(00)")
+//        }icon:{
+//        }
             VStack{
                 HStack{
                     Button(action: session.signOut){
