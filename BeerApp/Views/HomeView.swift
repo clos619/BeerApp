@@ -10,30 +10,24 @@ import FirebaseDatabase
 
 struct HomeView: View {
     @EnvironmentObject var session: SessionStore
-    var setZip = [String: String]()
-    var zipCode: String = "92128"
     func getUser(){
         session.listen()
     }
     private let database = Database.database().reference()
     var body: some View {
+        NavigationView{
         Text("Welcome Home")
         Label{
-            Text("zipCode: ",tableName: zipCode)
+            Text("User: \(00)")
         }icon:{
         }
-        NavigationView{
             VStack{
                 HStack{
-                    if session != nil{
                     Button(action: session.signOut){
                         Text("Sign Out")
-                    }
-                    }else{
-                        AuthView()
-                    }
                 }.onAppear(perform: {
                     getUser()
+                    
                 })
             }
         }
@@ -48,5 +42,5 @@ struct HomeView: View {
 //        })
 //    }
     
+    }
 }
-
