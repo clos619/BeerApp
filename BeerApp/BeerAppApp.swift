@@ -17,7 +17,7 @@ struct BeerAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SignIn()
+            SignIn().environmentObject(SessionStore())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
