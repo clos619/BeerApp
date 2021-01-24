@@ -5,15 +5,16 @@
 //  Created by Christian Shirichena on 1/23/21.
 //
 
+import Foundation
 import SwiftUI
 
 struct SearchBar: View {
-    @Binding var text: String
+    @Binding var userEnteredZipCode: String
     @State private var isEditing = false
     
     var body: some View {
         HStack {
-            TextField("Search for a Beer", text: $text)
+            TextField("Search for a Beer", text: $userEnteredZipCode)
                 .padding(7)
                 .padding(.horizontal, 25)
                 .background(Color(.systemGray))
@@ -27,7 +28,7 @@ struct SearchBar: View {
                     
                     if isEditing {
                         Button(action: {
-                            self.text = ""
+                            self.userEnteredZipCode = ""
                         }) {
                             Image(systemName: "multiply.circle.fill")
                                 .foregroundColor(.gray)
@@ -42,7 +43,7 @@ struct SearchBar: View {
             if isEditing {
                 Button(action: {
                     self.isEditing = false
-                    self.text = ""
+                    self.userEnteredZipCode = ""
                 }) {
                     Text("Cancel")
                 }
@@ -52,16 +53,12 @@ struct SearchBar: View {
             }
         }
     }
-    
-    func performSearch() {
-
-       }
 }
 
 
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(text: .constant(""))
+        SearchBar(userEnteredZipCode: .constant(""))
     }
 }

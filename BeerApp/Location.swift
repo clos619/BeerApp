@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+var userEnteredZipCode = ""
+
 struct Location: Decodable {
     let data: [Data]
 }
@@ -33,8 +35,9 @@ struct Data: Decodable {
     let brewery: Brewery?
 }
 
-URLSession.shared.dataTask(with:
-URL(string: "https://sandbox-api.brewerydb.com/v2/locations/?key=152f435217d5cb3e67e614c1a576aa01&postalCode=13027")!)
+func setUpADay() {
+
+URLSession.shared.dataTask(with: URL(string: "https://sandbox-api.brewerydb.com/v2/locations/?key=152f435217d5cb3e67e614c1a576aa01&postalCode=\(userEnteredZipCode)")!)
 { (data, response, error) in
   guard let data = data else {
     print("no data found")
@@ -47,3 +50,4 @@ URL(string: "https://sandbox-api.brewerydb.com/v2/locations/?key=152f435217d5cb3
     print("There was an error")
   }
 }.resume()
+}
