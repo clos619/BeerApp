@@ -18,6 +18,8 @@
 		3A81235525B898EE00B4ED33 /* BeerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A81235325B898EE00B4ED33 /* BeerApp.xcdatamodeld */; };
 		3A81235E25B8991800B4ED33 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81235D25B8991800B4ED33 /* SignIn.swift */; };
 		3A981FF525B9F0A20072B7E8 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A981FF425B9F0A20072B7E8 /* Register.swift */; };
+		EC0C838125BC4EB800F563FA /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C838025BC4EB800F563FA /* SearchBar.swift */; };
+		EC0C838825BCE8A400F563FA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C838725BCE8A400F563FA /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		716D806F949047545BFE0112 /* Pods-BeerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.release.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.release.xcconfig"; sourceTree = "<group>"; };
 		817419A714DA18B98C0C0773 /* Pods-BeerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerApp.debug.xcconfig"; path = "Target Support Files/Pods-BeerApp/Pods-BeerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A45A01419C1C0956BE16C427 /* Pods_BeerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0C838025BC4EB800F563FA /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		EC0C838725BCE8A400F563FA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				3A81234825B898EC00B4ED33 /* BeerAppApp.swift */,
 				3A81234A25B898EC00B4ED33 /* ContentView.swift */,
+				EC0C838025BC4EB800F563FA /* SearchBar.swift */,
+				EC0C838725BCE8A400F563FA /* Location.swift */,
 				3A81236325B89B0D00B4ED33 /* Resources */,
 				3A81235125B898EE00B4ED33 /* Persistence.swift */,
 				3A81235625B898EE00B4ED33 /* Info.plist */,
@@ -245,7 +251,9 @@
 				3A81234B25B898EC00B4ED33 /* ContentView.swift in Sources */,
 				3A81235E25B8991800B4ED33 /* SignIn.swift in Sources */,
 				3A07205825B8A20C00FDE7E4 /* HomeView.swift in Sources */,
+				EC0C838825BCE8A400F563FA /* Location.swift in Sources */,
 				3A981FF525B9F0A20072B7E8 /* Register.swift in Sources */,
+				EC0C838125BC4EB800F563FA /* SearchBar.swift in Sources */,
 				3A81234925B898EC00B4ED33 /* BeerAppApp.swift in Sources */,
 				3A81235525B898EE00B4ED33 /* BeerApp.xcdatamodeld in Sources */,
 			);
