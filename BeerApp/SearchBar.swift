@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct SearchBar: View {
-    @Binding var userEnteredZipCode: String
+    @State var userEnteredZipCode: String
     @State private var isEditing = false
     
     var body: some View {
@@ -59,6 +59,6 @@ struct SearchBar: View {
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(userEnteredZipCode: .constant(""))
+        SearchBar(userEnteredZipCode: (""))
     }
 }
