@@ -21,7 +21,11 @@ struct HomeView: View {
         }
         NavigationView{
         Text("Welcome Home")
-//        Label{
+            List{
+                ShowBeerData(data: testing)
+            }
+            
+        //        Label{
 //            //Text("User: \(00)")
 //        }icon:{
 //        }
